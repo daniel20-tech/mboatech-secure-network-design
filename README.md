@@ -22,7 +22,7 @@ Les listes de contrôle d'accès (ACL) ont été configurées sur le routeur pou
   Le VLAN DEV peut uniquement accéder au serveur d'application et au serveur web.  
   Le VLAN SUPPORT est limité à l'accès au serveur web uniquement.  
   Le VLAN GUEST est totalement isolé des serveurs internes et peut uniquement accéder à Internet.. 
-  
+La stratégie de sécurité repose sur le principe du moindre privilège : chaque département n'accède qu'aux ressources strictement nécessaires à ses fonctions. L'utilisation d'ACL étendues permet une granularité fine, isolant les serveurs sensibles des accès non autorisés, notamment ceux des invités et du support.
 # Travail réalisé
   Configuration des VLAN et du routage inter-VLAN. 
   Mise en place d'un serveur DHCP pour l'attribution automatique des adresses IP.  
